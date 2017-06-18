@@ -155,6 +155,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(animAlpha);
+                mp.stop();
                 buttonSound.start();
                 Intent intent = new Intent(QuizActivity.this, MainActivity.class);
                 startActivity(intent);

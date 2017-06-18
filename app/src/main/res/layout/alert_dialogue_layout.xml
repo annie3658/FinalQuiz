@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:layout_gravity="center|top"
+        android:hint="@string/enterName"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textPersonName"
+        />
+</LinearLayout>

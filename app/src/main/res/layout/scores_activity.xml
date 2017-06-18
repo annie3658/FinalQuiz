@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/tvUsernameHeader"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvScoreHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/score"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvLanguageHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/language"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="17sp"
+            android:layout_weight="0.19" />
+
+        <TextView
+            android:id="@+id/tvDifficultyHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="@string/difficulty"
+            android:textAlignment="textStart"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/scoresListView"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.57"
+        android:background="@color/myColor" />
+
+    <Button
+        android:id="@+id/startGameBtn"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:fontFamily="monospace"
+        android:text="@string/startNewGameButton"
+        android:textColor="@color/cardview_light_background" />
+
+</LinearLayout>
